@@ -10,6 +10,7 @@ while True:
     if input("Continue? [Y/n] ") not in "Yy":
         break
 
+print()
 for i, client in enumerate(clients):
     client['name'] = ' '.join(
         map(lambda s: s.strip().capitalize(), client['name'].split(' ')))
